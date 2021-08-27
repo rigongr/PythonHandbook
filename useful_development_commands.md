@@ -1,6 +1,6 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="zoom:300%;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="zoom:300%; text-align: center;" />
 
-
+------
 
 ​	
 
@@ -26,12 +26,16 @@
 
 # run tests
 ./manage.py --dev runtests
+
+# These commands are work related.
 ```
 
-**PDB**
+
+
+**PYTHON DEBUGGER (PDB)**
 
 ```
-interactive - to make P
+interactive - to activate Python shell while debugging with Python Debugger.
 ```
 
 
@@ -39,8 +43,6 @@ interactive - to make P
 
 
 # 02. Databases (PostgreSQL)
-
-pass
 
 #### POSTGRES:
 
@@ -118,7 +120,7 @@ deactive ----> Exits the current activated virtual environment.
 poetry run python -m py.test tests/routes/test_campaign_shared_sets.py::[name_of_the_test] -vv -x --pdb
 
 *TO RUN THE COMPLETE FILE*
-poetry run python -m py.test tests/routers/ad_groups/test_critera.py -vv -x --pd
+poetry run python -m py.test tests/routers/ad_groups/test_critera.py -vv -x --pdb      
 ```
 
 
@@ -142,6 +144,8 @@ poetry run python -m py.test tests/routers/ad_groups/test_critera.py -vv -x --pd
 ----> docker volume prune
 ```
 
+
+
 # 05. Terminal 
 
 Open a file to edit it in terminal (for example, a text file)
@@ -149,12 +153,6 @@ Open a file to edit it in terminal (for example, a text file)
 ```shell
 ~$ nano [directory of the file] ---> example ---> nano ~/.profile
 ```
-
-
-
-
-
-
 
 
 
