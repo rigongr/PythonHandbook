@@ -152,6 +152,8 @@ Open a file to edit it in terminal (for example, a text file)
 
 ```shell
 ~$ nano [directory of the file] ---> example ---> nano ~/.profile
+
+~$ sudo -H nautilus ---> Opens up folder explorer. With this, you can copy/paste/extract to folders that require permissions.
 ```
 
 
