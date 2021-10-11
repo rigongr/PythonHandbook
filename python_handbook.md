@@ -180,13 +180,35 @@ Open a file to edit it in terminal (for example, a text file)
 
 
 
-# To do:
+<hr> </hr>
 
 
 
-Research about:
 
-```Python
-- Structural Pattern Matching.
+
+<img src="/home/rigong/Desktop/1200px-Go_Logo_Blue.svg.png" alt="1200px-Go_Logo_Blue.svg" style="zoom: 50%;" />
+
+
+
+<hr> </hr>
+
+# 1. Basics 
+
+
+
+**1.1** Project initialziation commands:
+
+```shell
+
+$ mkdir myapp && cd myapp ---> Creates a folder named myapp and switches to that directory.
+
+$ go mod init myapp ---> The go mod init command creates a go.mod file to track your codes dependencies.
+
+$ go get ---> Imports a framework from github. EXAMPLE ---> `$ go get github.com/labstack/echo/v4`  (echo framework)
+
+NOTE: 'init()' function runs before 'main()'. 'main()' function runs after 'init()'
 ```
 
+
+
+****
