@@ -13,24 +13,9 @@
 - Git, Docker, Poetry.
 
 - Shell & Terminal commands (Linux)
-
   
-
-# 01. Testings (Fast API, PyTest, Poetry)
-
-
-
-```Python / Testings
-# run server
-./manage.py --dev runserver --reload
-
-# run tests
-./manage.py --dev runtests
-
-# These commands are work related.
-```
-
-
+  
+  
 
 **PYTHON DEBUGGER (PDB)**
 
@@ -40,9 +25,7 @@ interactive - to activate Python shell while debugging with Python Debugger.
 
 
 
-
-
-# 02. Databases (PostgreSQL)
+# Databases (PostgreSQL, Redis)
 
 #### POSTGRES:
 
@@ -66,10 +49,6 @@ Ubuntu, set global configs through terminal:
 4) export POSTGRES_DB="test"
 ```
 
-
-
-
-
 ```
 1. https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
    - Creating users / databases, permissions etc.
@@ -78,7 +57,7 @@ Ubuntu, set global configs through terminal:
 
 
 
-<h2> Redis: </h2>
+<h3> REDIS: </h3>
 
 <h3>
     Step 1.
@@ -134,11 +113,11 @@ $ 127.0.0.1:6379> get test
 
 ```
 
+Reference Link: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
 
 
 
-
-# 03. Git, Poetry, Pip                                               -- Version Control --
+# Git, Poetry, Pip                                               -- Version Control --
 
 
 
@@ -148,20 +127,6 @@ $ 127.0.0.1:6379> get test
 **git log --graph --oneline --decorate --all ----> this shows the previous changes, more information about tags and such.**
 **git tag v1.0.15 -----> Creates a tag, it's like a branch but it's unmovable.**
 **git commit -a -m "Add account stats endpoint"  -----> for commits on git**
-```
-
-
-
-#### How to review MR:
-
-```Git
-0. git checkout master --> git pull
-1. git checkout origin/[name_of_the_branch]
-2. git checkout name_of_the_branch
-3. git pull
-4. ./manage.py --dev runtests (work related)
-5. Check if the code is correct
-6. MERGE 
 ```
 
 
@@ -185,7 +150,7 @@ poetry run python -m py.test tests/routers/ad_groups/test_critera.py -vv -x --pd
 
 
 
-# 04. Docker
+# Docker
 
 
 
@@ -244,7 +209,7 @@ $ sudo -H nautilus ---> Opens up folder explorer. With this, you can copy/paste/
 
 
 
-<img src="/home/rigong/Desktop/1200px-Go_Logo_Blue.svg.png" alt="1200px-Go_Logo_Blue.svg" style="zoom: 50%;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" alt="1200px-Go_Logo_Blue.svg" style="zoom: 50%;" />
 
 
 
