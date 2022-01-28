@@ -78,6 +78,64 @@ Ubuntu, set global configs through terminal:
 
 
 
+<h2> Redis: </h2>
+
+<h3>
+    Step 1.
+</h3><h4> Setup & Install (For Linux) </h4>
+
+```shell
+$ sudo apt update
+$ sudo apt install redis-server
+
+# This will download and install Redis and its dependencies.
+# Open this file:
+$ sudo nano /etc/redis/redis.conf
+# Edit the line `supervised no` to `supervised systemd`. Press CTRL + X, Y, then ENTER to save the file and exit.
+
+# Then, restart the Redis service to reflect the changes you made to the configuration file:
+$ sudo systemctl restart redis.service
+
+
+```
+
+<h3> Step 2. </h3>
+
+<h4> Testing Redis </h4>
+
+```shell
+# Start by checking that the Redis service is running:
+$ sudo systemctl status redis
+
+# If `active` is on `running` then everything is good so far.
+# Here, you can see that Redis is running and is already enabled, meaning that it is set to start up every time the server boots.
+
+# To test that Redis is functioning correctly:
+$ redis-cli
+
+# In the prompt that follows, test connectivity with the ping command:
+$ 127.0.0.1:6379> ping # IF OK, this should return `PONG`.
+
+# Next, check that you’re able to set keys by running:
+$ 127.0.0.1:6379> set test "It's working!"
+
+# Retrieve the value by typing:
+$ 127.0.0.1:6379> get test
+
+# As a final test, we will check whether Redis is able to persist data even after it’s been stopped or restarted. To do this, first restart the Redis instance:
+$ 127.0.0.1:6379> exit
+$ sudo systemctl restart redis
+
+# Then connect with the command-line client again:
+$ redis-cli
+
+# And confirm that your test value is still available.
+$ 127.0.0.1:6379> get test
+
+```
+
+
+
 
 
 # 03. Git, Poetry, Pip                                               -- Version Control --
@@ -151,9 +209,9 @@ poetry run python -m py.test tests/routers/ad_groups/test_critera.py -vv -x --pd
 Open a file to edit it in terminal (for example, a text file)
 
 ```shell
-~$ nano [directory of the file] ---> example ---> nano ~/.profile
+$ nano [directory of the file] ---> example ---> nano ~/.profile
 
-~$ sudo -H nautilus ---> Opens up folder explorer. With this, you can copy/paste/extract to folders that require permissions.
+$ sudo -H nautilus ---> Opens up folder explorer. With this, you can copy/paste/extract to folders that require permissions.
 ```
 
 
